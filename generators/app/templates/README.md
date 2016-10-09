@@ -91,7 +91,7 @@ OK, 如果你决定尝试下这套基础库，首先要确保你有相应的环�
 
 效果如图：
 
-![yeoman安装预览图](img/yeoman.png)
+![yeoman安装预览图](docs/img/yeoman.png)
 
 输入项目名称，会以输入的项目名称建立文件夹，基础库的代码会自动创建。
 
@@ -266,11 +266,11 @@ sass文件的编译用的是gulp的`gulp-sass`，当执行`gulp`后，会监控`
 
 处理前：
 
-![scss文件转换前](img/px.png)
+![scss文件转换前](docs/img/px.png)
 
 处理后：
 
-![scss文件转换后](img/rem.png)
+![scss文件转换后](docs/img/rem.png)
 
 至于为什么转化规则是除以 `75` 呢？
 
@@ -814,11 +814,11 @@ this["templates"]["product"] = Handlebars.template({"1":function(container,depth
 
 `src/index.html`中引入`handlebars.runtime-v4.0.5.js`（压缩后13K）和要编译的模板文件，如图所示：
 
-![precompile-before](img/precompile-before.png)
+![precompile-before](docs/img/precompile-before.png)
 
 在`dev/index.html`就会编译成：
 
-![precompile-after](img/precompile-after.png)
+![precompile-after](docs/img/precompile-after.png)
 
 如果你想使用这个模板文件：
 
@@ -980,7 +980,7 @@ lnv.alert({
 
 效果如下：
 
-![alert](img/alert.png)
+![alert](docs/img/alert.png)
 
 js文件中调用
 
@@ -1007,7 +1007,7 @@ lnv.confirm({
 
 效果如下：
 
-![confirm](img/confirm.png)
+![confirm](docs/img/confirm.png)
 
 ### loading组件
 
@@ -1055,7 +1055,7 @@ $.ajax({
 
 效果如下：
 
-![loading](img/loading.png)
+![loading](docs/img/loading.png)
 
 js文件中调用：
 
@@ -1090,7 +1090,7 @@ $.ajax({
 
 效果如下：
 
-![loading2](img/loading2.png)
+![loading2](docs/img/loading2.png)
 
 ### util.js
 
@@ -1128,11 +1128,11 @@ console.log(lnv.getQueryString(phone)) // 189888888889
 
 在开启`gulp`命令的情况下，每当js文件进行保存时，我们会对js文件进行代码检查，如果有不符合规范的地方，会有消息提醒，在mac下长这个样子：
 
-![error](img/error.png)
+![error](docs/img/error.png)
 
 具体的不规范内容请查看终端：
 
-![error-detail](img/error-detail.png)
+![error-detail](docs/img/error-detail.png)
 
 我们团队的JavaScript的编码规范是基于[百度的JavaScript编码规范](https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md)，ESLint配置并没有覆盖所有的规范，具体的配置文件在`.eslintrc`中
 
@@ -1245,11 +1245,11 @@ console.log(lnv.getQueryString(phone)) // 189888888889
 
 1.到[http://www.iconfont.cn/](http://www.iconfont.cn/)，选择项目中用到的字体图，保存为一个项目，如下图：
 
-![字体图标](img/iconfont.png)
+![字体图标](docs/img/iconfont.png)
 
 2.然后点击“下载至本地”，会下载一个iconfont压缩包，里面有示例代码和字体文件，将字体文件替换掉示例的字体文件，需要替换的字体文件共有四个：
 
-![字体](img/font.png)
+![字体](docs/img/font.png)
 
 3.在html文件中使用
 
@@ -1285,11 +1285,11 @@ console.log(lnv.getQueryString(phone)) // 189888888889
 
 现在在sprite目录下有六张图片， 嗯，就是这奇怪的六张图，知道它在描述什么吗？哦，不重要……
 
-![sprite前](img/sprite-before.png)
+![sprite前](docs/img/sprite-before.png)
 
 执行`gulp`的命令的时候，就会根据六张图片，生成一个`sprite.png`到`src/img`目录下
 
-![sprite后](img/sprite-after.png)
+![sprite后](docs/img/sprite-after.png)
 
 同时生成对应的`sprite.scss`，放在`src/scss/sprite`/下,这是`sprite.scss`
 
@@ -1399,7 +1399,7 @@ html文件：
 
 OK，在页面你就可以看见预览效果了。
 
-![sprite预览](img/sprite-example.png)
+![sprite预览](docs/img/sprite-example.png)
 
 开启`gulp`命令后，命名窗口不需要关闭，gulp会实时监控sprite文件夹的变化，如果有变化，就会执行上述操作。
 
